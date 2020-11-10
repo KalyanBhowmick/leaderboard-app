@@ -11,6 +11,10 @@ const LeadersReducer = ( state = initialState , action) => {
 
     if(action.type === 'ADD_LEADER') {
 
+        const newPoint = Number(action.payload.point);
+
+        action.payload.point = newPoint;
+
         return {...state, leaders: [...state.leaders, action.payload]}
      
     } else if(action.type === 'INCREMENT_POINTS') {

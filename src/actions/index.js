@@ -1,6 +1,7 @@
 export const addLeader = (leader) => {
+
     return {
-        type: 'LEADER_ADDED',
+        type: 'ADD_LEADER',
         payload: leader
     };
 };
