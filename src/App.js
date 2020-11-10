@@ -1,7 +1,6 @@
 
 import './App.css';
 import LeaderList from './components/LeaderList';
-import { SelectLeader } from './actions';
 
 function App() {
   return (
